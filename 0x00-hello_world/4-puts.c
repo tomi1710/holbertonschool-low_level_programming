@@ -1,10 +1,13 @@
-#include <stdio.h>
+B#include <stdio.h>
+#include <string.h>
 
 int main()
 {
-  str= "\"Programming is like building a multilingual puzzle";
+char str1[15];
 
-  puts(str1);
+strcpy(str1, "\"Programming is like building a multilingual puzzle");
 
-  return(0);
+puts(str1);
+
+return(0);
     }
