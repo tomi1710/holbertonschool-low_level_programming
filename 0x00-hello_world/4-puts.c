@@ -2,7 +2,9 @@
 
 int main()
 {
-  str= "with proper grammar, but the outcome is a piece of art,";
+  str= "\"Programming is like building a multilingual puzzle";
 
-  puts(str1)
+  puts(str1);
+
+  return(0);
     }
