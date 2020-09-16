@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <string.h>
 
-int main(void)
+int main()
 {
 puts("\"Programming is like building a multilengual puzzle\n");
 
