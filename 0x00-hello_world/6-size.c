@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+
 char chartype;
 int inttype;
 long int longinttype;
