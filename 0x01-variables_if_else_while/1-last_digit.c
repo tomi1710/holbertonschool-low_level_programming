@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
@@ -13,15 +16,15 @@ n = rand() - RAND_MAX / 2;
 lastdigit = n % 10;
 if (lastdigit > 5)
 {
-printf("Last digit of " n " is " lastdigit " and is greater than 5\n")
+  printf("Last digit of %i is %i and is greater than 5\n", n, lastdigit)
 }
 else if (lastdigit < 6)
 {
-printf("Last digit of " n " is " lastdigit " and is less than 6 and not 0\n")
+  printf("Last digit of %i is %i and is less than 6 and not 0\n", n, lastdigit)
 }
 else
 {
-printf("Last digit of " n " is " lastdigit " and is 0\n")
+  printf("Last digit of %i is %i and is 0\n", n, lastdigit)
 }
 
 return (0);
