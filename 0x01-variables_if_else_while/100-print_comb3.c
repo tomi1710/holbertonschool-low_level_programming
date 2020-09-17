@@ -17,7 +17,7 @@ if (num == num1)
 {}
 else if (num > num1)
 {}
-else 
+else
 {
 putchar(num);
 putchar(num1);
