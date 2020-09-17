@@ -21,7 +21,9 @@ else
 {
 putchar(num);
 putchar(num1);
-if (num != 99)
+if (num == '8' && num1 == '9')
+{}
+else
 {
 putchar(',');
 putchar(' ');
