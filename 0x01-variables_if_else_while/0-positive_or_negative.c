@@ -7,22 +7,20 @@
 int main(void)
 {
 int n;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n > 0)
 {
-print(" is positive\n");
+print("is positive\n");
 }
 else if (n < 0)
 {
-print(" is positive\n");
+print("is positive\n");
 }
 else
 {
-print(" is zero\n");
+print("is zero\n");
 }
-
 return (0);
 }
