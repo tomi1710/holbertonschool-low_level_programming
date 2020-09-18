@@ -19,7 +19,7 @@ for (num3 = '0' ; num3 <= '9' ; num3++)
 {
 if (num == num2 && num1 == num3)
 {}
-else if (num > num2)
+else if (num1 >= num3 || num > num2)
 {}
 else
 {
@@ -28,7 +28,7 @@ putchar(num1);
 putchar(' ');
 putchar(num2);
 putchar(num3);
-if (num == 9 && num1 == 8 && num2 == 9 && num3 == 9)
+if (num == '9' && num1 == '8')
 {}
 else
 {
