@@ -17,10 +17,12 @@ for (num2 = '0' ; num2 <= '9' ; num2++)
 {
 for (num3 = '0' ; num3 <= '9' ; num3++)
 {
-if (num == num2 && num1 == num3)
+if (num > num2)
 {}
-else if (num1 >= num3 || num > num2)
-{}
+ num3 = 0;
+do {
+       if (num == num2 && num1 == num3)
+	 {}
 else
 {
 putchar(num);
@@ -36,7 +38,8 @@ putchar(',');
 putchar(' ');
 }
 }
-}
+       num3++;
+     } while (num3 == 9);
 }
 }
 }
