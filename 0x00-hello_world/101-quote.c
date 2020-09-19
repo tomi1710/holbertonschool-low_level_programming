@@ -7,7 +7,7 @@
 int main(void)
 {
 
-char chr = 'and that piece of art is useful" - Dora Korpar, 2015-10-19';
+char chr = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 printf("%c", chr);
 
 return(1);
