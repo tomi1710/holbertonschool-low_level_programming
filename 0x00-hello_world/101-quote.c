@@ -7,7 +7,8 @@
 int main(void)
 {
 
-printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+char chr = 'and that piece of art is useful" - Dora Korpar, 2015-10-19';
+printf("%c", chr);
 
-return(0);
+return(1);
 }
