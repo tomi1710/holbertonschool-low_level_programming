@@ -1,9 +1,11 @@
 #include "holberton.h"
 /**
- * _isalpha - check c for alphabetic character
- * @c: string
+ * print_sign - prints the sign of a number
+ * @n: integer
  *
- * Return: 1 if c is a letter, 0 if not
+ * Return: 1 and prints + if n is greater than zero
+ * Returns 0 and prints 0 if n is zero
+ * Returns -1 and prints - if n is less than zero
  */
 int print_sign(int n)
 {
