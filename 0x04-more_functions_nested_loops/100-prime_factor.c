@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  *main - addadd
+ *Return: jfjjfjfj
  */
-void main(void)
+int main(void)
 {
 unsigned long int n, div, maxfact;
 div = 2;
@@ -24,4 +25,5 @@ break;
 }
 }
 }
+return (0);
 }
