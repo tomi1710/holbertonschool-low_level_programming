@@ -9,17 +9,13 @@ for (a = 0; a <= 9; a++)
 {
 for (b = 0; b <= 14; b++)
 {
-if (b > 9)
-{
 f = b / 10;
 l = b % 10;
-_putchar('0' + f);
-_putchar('0' + l);
-}
-else
+if (b > 9)
 {
-_putchar('0' + b);
+_putchar('0' + f);
 }
+_putchar('0' + l);
 }
 _putchar('\n');
 }
