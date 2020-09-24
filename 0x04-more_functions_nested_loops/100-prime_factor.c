@@ -12,7 +12,7 @@ while (n != 0)
 {
 if ((n % div) != 0)
 {
-div ++;
+div++;
 }
 else
 {
