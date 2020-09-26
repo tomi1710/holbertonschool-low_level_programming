@@ -11,7 +11,7 @@ int main(void)
   printf("1, ");
   printf("2, ");
   printf("3, ");
-  for (repeat = 1; repeat < 25; repeat++)
+  for (repeat = 1; repeat < 24; repeat++)
     {
       a = a + b;
       b = b + a;
