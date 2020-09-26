@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
- * times_table - create a table of multiplication facts
- *
- * Return: print to stdout the 9 times table, starting with 0.
+ * print_times_table - create a table of multiplication facts
+ * @n: aaaaaa
  */
 void print_times_table(int n)
 {
