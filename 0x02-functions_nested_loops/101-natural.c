@@ -13,4 +13,5 @@ sum = sum + a;
 }
 }
 printf("%i\n", sum);
+return (0);
 }
