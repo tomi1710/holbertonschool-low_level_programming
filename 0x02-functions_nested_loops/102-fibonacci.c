@@ -19,6 +19,7 @@ int main(void)
 	{
 	  a = a * -1;
       printf("%i, ", a);
+      a = a * -1;
 	}
       else
 	{
@@ -28,6 +29,7 @@ int main(void)
 	{
 	  b = b * -1;
       printf("%i, ", b);
+      b = b * -1;
 	}
       else
 	{
