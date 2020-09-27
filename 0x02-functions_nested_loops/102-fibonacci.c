@@ -11,31 +11,18 @@ int main(void)
   printf("1, ");
   printf("2, ");
   printf("3, ");
-  for (repeat = 1; repeat < 24; repeat++)
+  for (repeat = 1; repeat < 21; repeat++)
     {
       a = a + b;
       b = b + a;
-      if (a < 0)
-	{
-	  a = a * -1;
       printf("%i, ", a);
-      a = a * -1;
-	}
-      else
-	{
-	  printf("%i, ", a);
-	}
-      if (b < 0)
-	{
-	  b = b * -1;
       printf("%i, ", b);
-      b = b * -1;
-	}
-      else
-	{
-	printf("%i, ", b);
-	}
     }
-  printf("12586269025");
+  printf("1836311903, ");
+  printf("2971215073, ");
+  printf("4807526976, ");
+  printf("7778742049, ");
+  printf("12586269025, ");
+  printf("20365011074");
   putchar('\n');
 }
