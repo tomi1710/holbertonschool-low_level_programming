@@ -3,6 +3,7 @@
  *_strcpy - asasasas
  *@dest: adawdasdaw
  *@src: sdsdadwdd
+ *Return: sadadsas
  */
 char *_strcpy(char *dest, char *src)
 {
