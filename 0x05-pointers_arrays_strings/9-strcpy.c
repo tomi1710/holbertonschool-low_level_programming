@@ -7,11 +7,11 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-  int i, a;
- for (a = 0; src[a] != '\0'; a++)
-   {
-   }
-for (i = 0; i == a; i++)
+int i, a;
+for (a = 0; src[a] != '\0'; a++)
+{
+}
+for (i = 0; i <= a; i++)
 {
 dest[i] = src[i];
 }
