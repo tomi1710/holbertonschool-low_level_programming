@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-  int i, a, b = 0, c, res = 0;
+int i, a, b = 0, c, res = 0;
 for (a = 0; s[a] != '\0'; a++)
 {
 if (s[a] >= 0 && s[a] <= 9)
@@ -25,7 +25,7 @@ b++;
 }
 }
 i = 0;
-if (s[b] == '-')
+if (s[0] == '-')
 {
 i = 1;
 }
