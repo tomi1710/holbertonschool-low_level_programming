@@ -13,7 +13,7 @@ if (s[a] == '+')
 {
 mas++;
 }
-else if (s[a] = '-')
+else if (s[a] == '-')
 {
 menos++;
 }
