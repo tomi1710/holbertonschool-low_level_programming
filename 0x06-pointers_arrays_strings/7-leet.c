@@ -18,5 +18,5 @@ s[i] = s2[i2 + 1];
 }
 }
 }
-return(s);
+return (s);
 }
