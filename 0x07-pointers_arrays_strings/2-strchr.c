@@ -15,10 +15,7 @@ i++;
 if (i < c)
 {
 s = &s[i];
-}
-else
-{
-s = 0;
-}
 return (s);
+}
+return (0);
 }
