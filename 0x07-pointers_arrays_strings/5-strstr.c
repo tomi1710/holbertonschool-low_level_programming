@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *strstr - asfafdsf
+ *_strstr - asfafdsf
  *@haystack: adsadad
  *@needle: asdadsadsa
  *Return: asdadadsa
