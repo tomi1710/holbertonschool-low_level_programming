@@ -1,28 +1,35 @@
 #include "holberton.h"
-
+/**
+ *strstr - asfafdsf
+ *@haystack: adsadad
+ *@needle: asdadsadsa
+ *Return: asdadadsa
+ */
 char *_strstr(char *haystack, char *needle)
 {
-  char arr[98];
-  int a, b, i = 0;
-
-  for (a = 0; haystack[a] != '\0'; a++)
-    {
-      for (b = 0; needle[b] != '\0'; b++)
-	{
-	  if (haystack[a] == needle[b])
-	    {
-	      arr[i] = haystack[a];
-	      i++;
-	    }
-	}
-      if (arr == needle)
-	{
-	  return (needle);
-	}
-      if (i > 0 && arr[i] != haystack[a])
-	{
-	  i = 0;
-	}
-    }
-  return (0);
+int i = 0, i2 = 0;
+while (haystack[i] != '\0')
+{
+while (needle[i2] != '\0' && (haystack[i] == needle[0]))
+{
+if (haystack[i + i2] == needle[i2])
+{
+i2++;
+}
+else
+{
+break;
+}
+}
+if (needle[i2] != '\0')
+{
+i2 = 0;
+i++;
+}
+else
+{
+return (haystack + i);
+}
+}
+return (0);
 }
