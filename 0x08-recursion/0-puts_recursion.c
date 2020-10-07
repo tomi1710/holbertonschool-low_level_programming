@@ -1,14 +1,17 @@
 #include "holberton.h"
 /**
  *_puts_recursion - asdadasda
- *@s: asdadadasd
+ *@s: asadsadsasd
  */
 void _puts_recursion(char *s)
 {
-int i;
-for (i = 0; s[i] != '\0'; i++)
+_putchar(s[0]);
+if (s[0] == '\0')
 {
-_putchar(s[i]);
-}
 _putchar('\n');
+}
+else
+{
+_puts_recursion(s + 1);
+}
 }

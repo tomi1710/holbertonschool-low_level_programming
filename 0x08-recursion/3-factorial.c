@@ -6,21 +6,16 @@
  */
 int factorial(int n)
 {
-int i, fac = 1;
-if (n > 0)
+if (n <= 0)
 {
-for (i = 1; i <= n; i++)
-{
-fac = fac *i;
+return (-1);
 }
-}
-else if (n == 0)
+else if (n == 1)
 {
-fac = 1;
+return (1);
 }
 else
 {
-fac = -1;
+return (n*factorial(n-1));
 }
-return (fac);
 }
