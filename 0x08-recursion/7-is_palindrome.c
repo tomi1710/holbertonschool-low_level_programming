@@ -34,11 +34,10 @@ int _palindrome(char *s)
 
 int _is_palindrome_true(char *s, int x)
 {
-  if (s[0] == s[x - 1] && s[1] == s[x - 2] && s[2] == s[x -3])
+  if (s[0] == s[x - 1])
     {
       x--;
-      x--;
-      x--;
+      return (_is_palindrome_true(s + 1, x);
     }
   return (x);
 }
