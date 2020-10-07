@@ -37,7 +37,6 @@ int _is_palindrome_true(char *s, int x)
   if (s[0] == s[x - 1])
     {
       x--;
-      return (_is_palindrome_true(s + 1, x);
     }
   return (x);
 }
