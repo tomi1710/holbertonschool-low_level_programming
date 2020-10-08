@@ -42,7 +42,7 @@ return (0);
  */
 int _is_palindrome_true(char *s, int x)
 {
-if (s[0] == s[x - 1])
+if (s[0] == s[x - 1] && s[3] == s[x-4])
 {
 x--;
 }
