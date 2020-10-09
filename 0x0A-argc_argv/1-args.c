@@ -1,10 +1,14 @@
 #include "holberton.h"
 #include <stdio.h>
-
+/**
+ *main - asdadad
+ *@argc: asdadasd
+ *@argv: asdadsads
+ *Return: asdadsad
+ */
 int main(int argc, char *argv[])
 {
-
-  (void) argv;
-  printf("%d\n", argc);
-  return (0);
+(void) argv;
+printf("%d\n", argc);
+return (0);
 }
