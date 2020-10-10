@@ -12,7 +12,7 @@ int i, sum = 0, a;
 for (i = 1; i < argc; i++)
 {
 a = atoi(argv[i]);
-if (a == 0 && *argv[i] != '0')
+if (a == 0)
 {
 printf("Error\n");
 return (1);
