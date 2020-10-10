@@ -1,29 +1,49 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<ctype.h>
+#include<stdio.h>
+#include<stdlib.h>
+int revisar(char *s);
 /**
- *main - asdads
- *@argc: asdasda
- *@argv: asdadada
- *Return: asdadad
+ * main - arcg, *argv print the name of program
+ * @argc: count parameters
+ * @argv: array parameters
+ * Return: return
+ *
  */
 int main(int argc, char *argv[])
 {
-int i, sum = 0, a;
-if (argc == 1)
+int a = 0, num, suma;
+for (a = 1; a < argc; a++)
 {
-printf("0\n");
-return (0);
+if (revisar(argv[a]))
+{
+num = atoi(argv[a]);
+suma = suma + num;
 }
-for (i = 1; i < argc; i++)
-{
-a = atoi(argv[i]);
-if (a == 0 && *argv[i] != '0')
+else
 {
 printf("Error\n");
 return (1);
 }
-sum += a;
 }
-printf("%d\n", sum);
+printf("%d", suma);
+printf("\n");
 return (0);
+}
+
+/**
+ * revisar - revisa si  a char es un digit.
+ * @s: char
+ * Return: return 1 y 0
+ */
+int revisar(char *s)
+{
+int b = 0;
+for (b = 0; s[b] != '\0'; b++)
+{
+if (!isdigit(s[b]))
+{
+return (0);
+}
+}
+return (1);
 }
