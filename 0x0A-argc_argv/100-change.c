@@ -10,14 +10,14 @@ int main(int argc, char *argv[])
 {
 int coins, amount = 0;
 coins = atoi(argv[1]);
+if (argc != 2)
+{
+printf("Error\n");
+return (0);
+}
 if (coins < 0)
 {
 printf("0");
-return (0);
-}
-if (argc != 3)
-{
-printf("Error\n");
 return (0);
 }
 while (coins >= 25)
