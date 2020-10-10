@@ -17,7 +17,7 @@ return (0);
 coins = atoi(argv[1]);
 if (coins <= 0)
 {
-printf("0");
+printf("0\n");
 return (0);
 }
 while (coins >= 25)
