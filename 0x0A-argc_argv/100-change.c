@@ -15,7 +15,7 @@ if (coins < 0)
 printf("0");
 return (0);
 }
-if (argc != 2)
+if (argc != 3)
 {
 printf("Error\n");
 return (0);
