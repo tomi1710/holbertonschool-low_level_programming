@@ -12,6 +12,7 @@ _putchar('\n');
 }
 else
 {
+printf(s[0]);
 _puts_recursion(s + 1);
 }
 }
