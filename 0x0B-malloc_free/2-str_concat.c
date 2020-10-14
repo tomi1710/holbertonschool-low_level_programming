@@ -26,7 +26,7 @@ if (i2 == 0)
 i2++;
 i2 = i2 + i;
 p = (char *)malloc(sizeof(char) * i2);
-if (p == NULL)
+if (p == NULL || i2 == 0)
 {
 return (NULL);
 }
