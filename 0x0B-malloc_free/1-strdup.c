@@ -16,7 +16,7 @@ for (i = 0; str[i] != '\0'; i++)
 }
 if (i == 0)
 return (NULL);
-p = (char *)malloc(i);
+p = (char *)malloc(i + 2);
 if (p == NULL)
 {
 return (NULL);
