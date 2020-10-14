@@ -17,12 +17,14 @@ for (; s1[i] != '\0'; i++)
 }
 if (i == 0)
 i++;
+i++;
 if (s2 == NULL)
 s2 = "";
 for (; s2[i2] != '\0'; i2++)
 {
 }
 if (i2 == 0)
+i2++;
 i2++;
 i2 = i2 + i;
 p = (char *)malloc(sizeof(char) * i2);
