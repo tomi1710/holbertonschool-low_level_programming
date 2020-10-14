@@ -13,7 +13,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 }
 i++;
-p = (char *)malloc(sizeof(char) * i);
+p = (char *)malloc(i);
 if (p == NULL || i == 0)
 {
 return (NULL);
@@ -22,7 +22,6 @@ for (i = 0; str[i] != '\0'; i++)
 {
 p[i] = str[i];
 }
-i++;
 p[i] = '\0';
 return (p);
 }
