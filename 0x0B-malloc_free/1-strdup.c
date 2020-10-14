@@ -1,29 +1,44 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *_strdup - duplicates a string into a new array
- *@str: string
- *Return: returns new array with a copy of str
+ * _strdup - sadf
+ * @str: sadf
+ * Return: sadf
  */
 char *_strdup(char *str)
 {
-char *p;
-int i, i2;
-if (str == NULL)
-return (NULL);
+char *ar;
+int size, i;
+if (str != NULL)
+{
 for (i = 0; str[i] != '\0'; i++)
 {
 }
-if (i == 0)
-return (NULL);
-i++;
-i++;
-p = (char *)malloc(i);
-if (p == NULL)
-return (NULL);
-for (i2 = 0; i2 <= i; i2++)
-{
-p[i2] = str[i2];
 }
-return (p);
+else
+{
+return (NULL);
+}
+i++;
+size = i;
+if (size == 0)
+{
+return (NULL);
+}
+else
+{
+ar = (char *)malloc(size);
+if (ar == NULL)
+{
+return (NULL);
+}
+else
+{
+for (i = 0; i <= size; i++)
+{
+ar[i] = str[i];
+}
+return (ar);
+}
+}
 }
