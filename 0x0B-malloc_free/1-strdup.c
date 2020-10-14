@@ -22,5 +22,6 @@ for (i = 0; str[i] != '\0'; i++)
 {
 p[i] = str[i];
 }
+p[i] = '\0';
 return (p);
 }
