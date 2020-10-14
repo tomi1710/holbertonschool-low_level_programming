@@ -14,8 +14,10 @@ str = "";
 for (i = 0; str[i] != '\0'; i++)
 {
 }
+if (i == 0)
+return (NULL);
 p = (char *)malloc(i + 1);
-if (p == NULL || i == 0)
+if (p == NULL)
 {
 return (NULL);
 }
