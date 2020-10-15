@@ -1,5 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
+int _strlen(char *s);
 /**
  *string_nconcat - concatenates two strings into a knew one
  *@s1: fist string
@@ -9,41 +11,54 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, i2, i3, i4 = 0;
+	unsigned int len1, len2, i, i2;
 	char *p;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
-	for (i = 0; s1[i] != '\0'; i++)
-	{
 	}
-	if (i > 0)
-		i--;
 	if (s2 == NULL)
+	{
 		s2 = "";
-	for (i2 = 0; s2[i2] != '\0'; i2++)
-	{
 	}
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 
-	if (n < i2)
-		i2 = n;
-
-	p = malloc(i + i2);
+	if (n > len2)
+	{
+		n = len2;
+	}
+	p = malloc(len1 + n + 1);
 	if (p == NULL)
+	{
 		return (NULL);
-	if (i != 0)
-	{
-	for (i3 = 0; i3 <= i; i3++)
-	{
-		p[i4] = s1[i3];
-		i4++;
 	}
-	}
-	for (i3 = 0; i3 < i2; i3++)
+
+	for (i = 0; i < len1; i++)
 	{
-		p[i4] = s2[i3];
-		i4++;
+		p[i2] = s1[i];
+		i2++;
 	}
-	p[i4] = '\0';
+	for (i = 0; i < len2; i++)
+	{
+		p[i2] = s2[i];
+		i2++;
+	}
+	p[i2] = '\0';
 	return (p);
+}
+
+/**
+ * _strlen - fdfdf
+ * @s: sksksks
+ * Return: sassassass
+ */
+	int _strlen(char *s)
+{
+	int i;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	}
+	return (i);
 }
