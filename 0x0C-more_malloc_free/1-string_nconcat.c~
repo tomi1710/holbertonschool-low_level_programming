@@ -1,0 +1,39 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ *string_nconcat - concatenates two strings into a knew one
+ *@s1: fist string
+ *@s2: second string
+ *@n: amount of characters to print from s2
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	unsigned int i, i2, i3, i4 = 0;
+	char *p;
+
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+	}
+	i--;
+	for (i2 = 0; s2[i2] != '\0'; i2++)
+	{
+	}
+
+	if (n < i2)
+		i2 = n;
+
+	p = (char *)malloc(i + i2);
+
+	for (i3 = 0; i3 <= i; i3++)
+	{
+		p[i4] = s1[i3];
+		i4++;
+	}
+	for (i3 = 0; i3 < i2; i3++)
+	{
+		p[i4] = s2[i3];
+		i4++;
+	}
+	return (p);
+	p[i4] = '\0';
+}

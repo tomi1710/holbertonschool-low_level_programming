@@ -1,0 +1,10 @@
+#include "holberton.h"
+#include <stdlib.h>
+
+void *malloc_checked(unsigned int b)
+{
+	char *p;
+	p = malloc(b);
+
+	return (p);
+}
