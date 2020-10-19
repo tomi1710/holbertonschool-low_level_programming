@@ -14,18 +14,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i, a, b;
 	dog_t *d = 0;
 
-/**	if (name == NULL)
+	if (name == NULL)
 		return (NULL);
 	if (owner == NULL)
-	return (NULL);*/
+		return (NULL);
 
 	a = _strlen(name);
 	b = _strlen(owner);
 
-	storename = malloc(a);
+	storename = malloc(a + 1);
 	if (storename == NULL)
 		return (NULL);
-	storeowner = malloc(b);
+	storeowner = malloc(b + 1);
 	if (storeowner == NULL)
 		return (NULL);
 
