@@ -29,9 +29,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (storeowner == NULL)
 		return (NULL);
 
-	for (i = 0; i < a; i++)
+	for (i = 0; i <= a; i++)
 		storename[i] = name[i];
-	for (i = 0; i < b; i++)
+	for (i = 0; i <= b; i++)
 		storeowner[i] = owner[i];
 
 	d = malloc(sizeof(dog_t));
