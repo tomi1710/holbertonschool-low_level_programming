@@ -25,14 +25,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	storename = malloc(a + 1);
 	if (storename == NULL)
 	{
-		free(storename);
 		return (NULL);
 	}
 	storeowner = malloc(b + 1);
 	if (storeowner == NULL)
 	{
-		free(storeowner);
+		free(storename);
 		return (NULL);
+	}
 
 	for (i = 0; i < a; i++)
 		storename[i] = name[i];
@@ -44,13 +44,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(storename);
 		free(storeowner);
-		free(d);
 		return (NULL);
 	}
 
-	d->name = name;
+	d->name = storename;
 	d->age = age;
-	d->owner = owner;
+	d->owner = storeowner;
 
 	return (d);
 }
