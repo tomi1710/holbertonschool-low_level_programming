@@ -1,11 +1,10 @@
 #include "dog.h"
- /**
- *init_dog - adadsd
- *@d: asdasd
- *@name: asdad
- *@age: asda
- *@owner: adassd
- *Return: asdad
+/**
+ * init_dog - function that initialize a variable of type struct dog
+ * @d: pointer for dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
