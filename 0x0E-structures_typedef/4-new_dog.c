@@ -12,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	char *storename, *storeowner;
 	int i, a, b;
-	dog_t *d;
+	dog_t *d = 0;
 
 	if (name == NULL)
 		return (NULL);
@@ -22,16 +22,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	a = _strlen(name);
 	b = _strlen(owner);
 
-	storename = (char *)malloc(a + 1);
+	storename = malloc(a);
 	if (storename == NULL)
 		return (NULL);
-	storeowner = (char *)malloc(b + 1);
+	storeowner = malloc(b);
 	if (storeowner == NULL)
 		return (NULL);
 
-	for (i = 0; i <= a; i++)
+	for (i = 0; i < a; i++)
 		storename[i] = name[i];
-	for (i = 0; i <= b; i++)
+	for (i = 0; i < b; i++)
 		storeowner[i] = owner[i];
 
 	d = malloc(sizeof(dog_t));
