@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-
 #include <unistd.h>
-
+/**
+ *read_textfile - reads and prints
+ *@filename: file name
+ *@letters: number of letters
+ *return: amout of letters printed
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
