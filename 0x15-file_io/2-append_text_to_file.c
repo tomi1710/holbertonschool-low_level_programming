@@ -16,7 +16,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		fd = open(filename, O_APPEND | O_WRONLY);
+		fd = open(filename, O_APPEND | O_WRONLY, 0600);
 		return (1);
 	}
 
@@ -27,7 +27,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	len = _strlen(text_content);
 
-	fd = open(filename, O_APPEND | O_WRONLY);
+	fd = open(filename, O_APPEND | O_WRONLY, 0600);
 
 	if (fd == -1)
 	{
