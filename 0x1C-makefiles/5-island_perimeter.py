@@ -14,7 +14,7 @@ def island_perimeter(grid):
             lake = 0
             if i == 0 or j == 0:
                 lake = 0
-            if grid[i][j] == 1:
+            if grid[i][j] == 0:
                 if grid[i - 1][j] != 0:
                     lake = lake + 1
                 if grid[i + 1][j] != 0:
