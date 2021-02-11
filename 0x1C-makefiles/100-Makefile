@@ -6,9 +6,7 @@ NAME=holberton
 
 .phony: all
 
-all: $(NAME)
-
-$(NAME): m.h $(OBJ)
+all: m.h $(OBJ)
         $(CC) $(OBJ) -o $(NAME)
 
 clean:
