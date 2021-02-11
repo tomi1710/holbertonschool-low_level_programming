@@ -6,7 +6,7 @@ NAME=holberton
 
 all: $(NAME)
 
-$(NAME): m.h main.o holberton.o
+$(NAME): m.h $(OBJ)
         $(CC) $(OBJ) -o $(NAME)
 
 clean:
