@@ -13,7 +13,7 @@ clean:
         $(RM) -f *~ $(NAME)
 
 oclean:
-        $(RM) -f main.o holberton.o
+        $(RM) -f $(OBJ)
 
 fclean: clean oclean
 
