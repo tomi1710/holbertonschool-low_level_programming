@@ -4,7 +4,7 @@ SRC=main.c holberton.c
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 
-.phony: $(NAME) all fclean re
+.phony: all
 
 all: $(NAME)
 
