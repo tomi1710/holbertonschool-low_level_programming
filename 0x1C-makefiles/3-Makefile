@@ -1,6 +1,6 @@
 CC=gcc
-SRC=$(wildcard *.c)
-OBJ=$(SRC:%.c=%)
+SRC=main.c holberton.c
+OBJ=$(SRC:%.c=%.o)
 NAME=holberton
 RM=rm
 
@@ -8,8 +8,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-%.o: %.c
-	$(CC) -c $(SRC)
 
 clean:
 	$(RM) -f *~ $(NAME)
@@ -18,7 +16,7 @@ oclean:
 	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) -f $(OBJ) *~ $(NAME)
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
 
-re:
-	oclean all
+re: oclean all
