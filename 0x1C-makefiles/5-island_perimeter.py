@@ -5,6 +5,7 @@ returns the perimeter of the island described in grid
 
 
 def island_perimeter(grid):
+    """ def """
     per = 0
 
     for i in range(len(grid)):
