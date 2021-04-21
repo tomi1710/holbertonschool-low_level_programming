@@ -12,7 +12,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int left = 0, right = size - 1, mid, i = 0;
+	size_t left = 0, right = size - 1, mid, i = 0;
 	unsigned int j = 0;
 
 	if (array == NULL)
@@ -32,7 +32,7 @@ int binary_search(int *array, size_t size, int value)
 		}
 		else if (array[mid] > value)
 		{
-			right = mid;
+			right = mid - 1;
 		}
 		else
 			return (mid);
